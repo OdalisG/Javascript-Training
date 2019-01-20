@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    margin: auto;
+    align-content: center; 
+}
+
+p {
+    text-align: center;
+    font-family: sans-serif;
+    color: white; 
+}
+h1 {
+    text-align: center;
+    color: aqua;
+}
+img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+   padding-top:1em;
+}
+a:hover, a:active {
+  background-color: red;
+}
+a {
+	color: white;
+}
+
+.navigation-right {
+   float: right;
+}

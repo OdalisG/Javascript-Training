@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   
+    <link rel ="stylesheet" href="styles.css">
+    <link rel ="stylesheet" href="slide.css">
+  <head>
+      <title>My Slideshow</title>
+    </head>
+      <a href="index.html">&#8962;Home</a>
+	  <div class="navigation-right">
+	  <a href="web.html">Web Fun</a>
+	  </div>
+    <body>   
+	
+    <p>Welcome to my Slideshow</p>  
+        <h1>Quick and Easy Slideshow</h1>
+        <p>Enjoy the beautiful beach. I had a great time building this project.  It was so easy, it took less then 5 minutes. Anyone can try this.</p>
+        <p>You can add as many pictures as you want.</p>
+        <p>Just have fun with it.  I know I did.</p>
+  
+        <script>
+       
+        var i = 0; //start point
+        var images = [];
+        var time = 2500;
+      
+        //image list
+        //where image changes
+        images[0] = 'image1.jpg';
+        images[1] = 'image2.jpg';
+        images[2] = 'image3.jpg';
+        images[3] = 'image4.jpg';
+        images[4] = 'image5.jpg';
+        images[5] = 'image6.jpg';
+        images[6] = 'image7.jpg';
+		images[7] = 'image9.jpg';
+		images[8] = 'image12.jpg';
+		images[9] = 'image13.jpg';
+		images[10] = 'image14.jpg';
+		images[11] = 'image15.jpg';
+		images[12] = 'image16.jpg';
+		images[13] = 'image17.jpg';
+       
+        function changeImg() {
+            document.slide.src = images[i];
+            
+            if(i < images.length -1) {
+                i++;
+            }
+                else {
+                i =0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        //when loaded
+        window.onload = changeImg;
+        
+        </script>
+    
+<img name ="slide" width="250" height="350">
+        
+    </body>
+ 
+</html>
